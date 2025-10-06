@@ -36,6 +36,9 @@
             <img src="./assets/o-chamado-de-cthulhu-hp-lovecraft.jpg" alt="Capa do livro O Chamado de Cthulhu">
             <h2>O Chamado de Cthulhu</h2>
             <p>R$ 45,90</p>
+            <!-- Explicação da ação do botão: Ao clicar no botão "Adicionar", o livro "O Chamado de Cthulhu" 
+                 será adicionado ao carrinho com o preço de R$ 45,90, e o contador de itens será atualizado.
+                 Valores esses passados pela função como parâmetros -->
             <button onclick="adicionarCarrinho('O Chamado de Cthulhu', 45.90)">Adicionar</button>
         </div>
 
@@ -71,6 +74,7 @@
     <!-- Carrinho -->
     <section class="carrinho-secao">
         <h3>Carrinho de Compras (<span id="contador-itens">0</span> itens)</h3>
+        <!-- Explicação: Esta lista exibirá os itens adicionados ao carrinho, está vazia pois ainda não há itens adicionados. -->
         <ul id="carrinho"></ul>
         <h3>Total: R$ <span id="total">0.00</span> </h3>
 
