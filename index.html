@@ -1,0 +1,88 @@
+<!-- 
+    **Criando um carrinho de compras** 
+    | Professora: ROSANETE GRASSIANI DOS SANTOS | 4° Semestre ADS | Desenvolvimento Web |
+    | Aluno: Weslley Luiz Kampa | Data: 06/10/2025
+    | Descrição: Implementação de um carrinho de compras utilizando JavaScript.
+    | Link do repositório: https://github.com/agr3w/Carrinho_Compras_JS_Unifacear
+    | Link da página em web: https://agr3w.github.io/Carrinho_Compras_JS_Unifacear/
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca do Terror Cósmicos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- Título -->
+    <header>
+        <h1>Biblioteca do Terror Cósmicos</h1>
+        <p>Explore os horrores incompreensíveis de H.P. Lovecraft</p>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner-lancamento">
+        <img src="./assets/Necronomicon_Banner.jpg" alt="Banner Necronomicon">
+        <div class="banner-texto">Lançamento: Necronomicon</div>
+    </div>
+
+    <!-- Livros -->
+    <main id="livros-container">
+        <div class="livro">
+            <img src="./assets/o-chamado-de-cthulhu-hp-lovecraft.jpg" alt="Capa do livro O Chamado de Cthulhu">
+            <h2>O Chamado de Cthulhu</h2>
+            <p>R$ 45,90</p>
+            <button onclick="adicionarCarrinho('O Chamado de Cthulhu', 45.90)">Adicionar</button>
+        </div>
+
+        <div class="livro">
+            <img src="./assets/A-Cor-Que-Caiu-do-Espaço.jpg" alt="Capa do livro A Cor Que Caiu do Espaço">
+            <h2>A Cor Que Caiu do Espaço</h2>
+            <p>R$ 52,90</p>
+            <button onclick="adicionarCarrinho('A Cor Que Caiu do Espaço', 52.90)">Adicionar</button>
+        </div>
+
+        <div class="livro">
+            <img src="./assets/nas-montanhas-da-loucura.jpg" alt="Capa do livro Nas Montanhas da Loucura">
+            <h2>Nas Montanhas da Loucura</h2>
+            <p>R$ 68,90</p>
+            <button onclick="adicionarCarrinho('Nas Montanhas da Loucura', 68.90)">Adicionar</button>
+        </div>
+
+        <div class="livro">
+            <img src="./assets/o-horror-de-dunwich.jpg" alt="Capa do livro O Horror de Dunwich">
+            <h2>O Horror de Dunwich</h2>
+            <p>R$ 55,90</p>
+            <button onclick="adicionarCarrinho('O Horror de Dunwich', 55.90)">Adicionar</button>
+        </div>
+
+        <div class="livro">
+            <img src="./assets/necronomicon.png" alt="Capa do livro Necronomicon">
+            <h2>Necronomicon</h2>
+            <p>R$ 89,90</p>
+            <button onclick="adicionarCarrinho('Necronomicon', 89.90)">Adicionar</button>
+        </div>
+    </main>
+
+    <!-- Carrinho -->
+    <section class="carrinho-secao">
+        <h3>Carrinho de Compras (<span id="contador-itens">0</span> itens)</h3>
+        <ul id="carrinho"></ul>
+        <h3>Total: R$ <span id="total">0.00</span> </h3>
+
+        <button onclick="limparCarrinho()">Limpar carrinho</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Desenvolvimento Web - Projeto Aprimorado</p>
+    </footer>
+
+    <!-- Chamada do Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
